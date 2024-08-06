@@ -39,22 +39,22 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>fengyueguoDESCRIPTION=An engaging 1-3 sentence description of your lab.</title>
+<title>Med-AIR Lab</title>
 
 <link rel="icon" href="/labSite/images/icon.png">
 
 <meta name="title" content="">
-<meta name="description" content="">
+<meta name="description" content="Department of Computer Science and Engineering @ CUHK. Medical Image Analysis, Machine Learning, Surgical Data Science, Robotics.">
 
 <meta property="og:title" content="">
-<meta property="og:site_title" content="fengyueguoDESCRIPTION=An engaging 1-3 sentence description of your lab.">
-<meta property="og:description" content="">
+<meta property="og:site_title" content="Med-AIR Lab">
+<meta property="og:description" content="Department of Computer Science and Engineering @ CUHK. Medical Image Analysis, Machine Learning, Surgical Data Science, Robotics.">
 <meta property="og:url" content="https://fengyueguo.github.io/labSite">
 <meta property="og:image" content="/labSite/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="">
-<meta property="twitter:description" content="">
+<meta property="twitter:description" content="Department of Computer Science and Engineering @ CUHK. Medical Image Analysis, Machine Learning, Surgical Data Science, Robotics.">
 <meta property="twitter:url" content="https://fengyueguo.github.io/labSite">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="/labSite/images/share.jpg">
@@ -70,7 +70,7 @@
       "@type": "WebSite",
     
     "name": "",
-    "description": "",
+    "description": "Department of Computer Science and Engineering @ CUHK. Medical Image Analysis, Machine Learning, Surgical Data Science, Robotics.",
     "headline": "",
     "publisher": {
       "@type": "Organization",
@@ -167,6 +167,10 @@
   
 
   
+    <link href="/labSite/_styles/flickity.css" rel="stylesheet">
+  
+
+  
     <link href="/labSite/_styles/float.css" rel="stylesheet">
   
 
@@ -184,6 +188,10 @@
 
   
     <link href="/labSite/_styles/grid.css" rel="stylesheet">
+  
+
+  
+    <link href="/labSite/_styles/group.css" rel="stylesheet">
   
 
   
@@ -219,6 +227,10 @@
   
 
   
+    <link href="/labSite/_styles/more.css" rel="stylesheet">
+  
+
+  
     <link href="/labSite/_styles/paragraph.css" rel="stylesheet">
   
 
@@ -236,6 +248,10 @@
 
   
     <link href="/labSite/_styles/post-nav.css" rel="stylesheet">
+  
+
+  
+    <link href="/labSite/_styles/publication.css" rel="stylesheet">
   
 
   
@@ -264,6 +280,10 @@
 
   
     <link href="/labSite/_styles/tags.css" rel="stylesheet">
+  
+
+  
+    <link href="/labSite/_styles/talks.css" rel="stylesheet">
   
 
   
@@ -330,9 +350,13 @@
 
   
 
+  
+
 
 <!-- include all css in styles folder -->
 
+
+  <link href="/labSite/_styles/fonts.css" rel="stylesheet">
 
 
   <!-- third party scripts -->
@@ -348,6 +372,12 @@
   <script src="/labSite/_scripts/dark-mode.js"></script>
 
   <script src="/labSite/_scripts/fetch-tags.js"></script>
+
+  <script src="/labSite/_scripts/flickity.pkgd.min.js"></script>
+
+  <script src="/labSite/_scripts/gallery.js"></script>
+
+  <script src="/labSite/_scripts/publication.js"></script>
 
   <script src="/labSite/_scripts/search.js"></script>
 
@@ -369,7 +399,7 @@
 
 
 
-<header class="background" style="--image: url('/labSite/images/background.jpg')" data-dark="true" data-big>
+<header class="background" style="--image: url('/labSite/images/cuhk_background.jpg')" data-dark="true" data-big>
   <a href="/labSite/" class="home">
     
       <span class="logo">
@@ -438,8 +468,10 @@
     
       <span class="title-text" data-tooltip="Home">
         
-          <span class="title">fengyueguoDESCRIPTION=An engaging 1-3 sentence description of your lab.</span>
+          <span class="title">Med-AIR Lab</span>
         
+        
+          <span class="subtitle">Department of Computer Science and Engineering @ CUHK</span>
         
       </span>
     
@@ -449,12 +481,6 @@
 
   <nav>
     
-    
-      
-        <a href="/labSite/research/" data-tooltip="Published works">
-          Research
-        </a>
-      
     
       
         <a href="/labSite/projects/" data-tooltip="Software, datasets, and more">
@@ -469,6 +495,24 @@
       
     
       
+        <a href="/labSite/research/" data-tooltip="Research directions">
+          Research
+        </a>
+      
+    
+      
+        <a href="/labSite/publication/" data-tooltip="Published works">
+          Publication
+        </a>
+      
+    
+      
+        <a href="/labSite/talks/" data-tooltip="Invited talks">
+          Talks
+        </a>
+      
+    
+      
         <a href="/labSite/blog/" data-tooltip="Musings and miscellany">
           Blog
         </a>
@@ -477,6 +521,18 @@
       
         <a href="/labSite/contact/" data-tooltip="Email, address, and location">
           Contact
+        </a>
+      
+    
+      
+        <a href="/labSite/media/" data-tooltip="Press release">
+          Media
+        </a>
+      
+    
+      
+        <a href="/labSite/more/" data-tooltip="Awards, services and contact">
+          More
         </a>
       
     
@@ -595,7 +651,7 @@
     
 
 
-<footer class="background" style="--image: url('/labSite/images/background.jpg')" data-dark="true" data-size="wide">
+<footer class="background" style="--image: url('/labSite/images/CUHK_edge.png')" data-dark="true" data-size="wide">
   <!--
     <div>
       Extra details like contact info or address
@@ -611,52 +667,7 @@
 
 
   <div class="button-wrapper">
-    <a class="button" href="mailto:contact@fengyueguoDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab..com" data-tooltip="Email" data-style="bare" aria-label="Email">
-      <i class="icon fa-solid fa-envelope"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="https://orcid.org/0000-0001-8713-9213" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
-      <i class="icon fa-brands fa-orcid"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="https://scholar.google.com/citations?user=ETJoidYAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
-      <i class="icon fa-brands fa-google"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="https://github.com/fengyueguoDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab." data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
+    <a class="button" href="https://github.com/med-air" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
       <i class="icon fa-brands fa-github"></i>
       
     </a>
@@ -671,7 +682,7 @@
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://twitter.com/fengyueguoDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab." data-tooltip="Twitter" data-style="bare" aria-label="Twitter">
+    <a class="button" href="https://twitter.com/QiDou_" data-tooltip="Twitter" data-style="bare" aria-label="Twitter">
       <i class="icon fa-brands fa-twitter"></i>
       
     </a>
@@ -686,8 +697,53 @@
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://youtube.com/fengyueguoDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab." data-tooltip="YouTube" data-style="bare" aria-label="YouTube">
-      <i class="icon fa-brands fa-youtube"></i>
+    <a class="button" href="mailto:qidou@cuhk.edu.hk" data-tooltip="Email" data-style="bare" aria-label="Email">
+      <i class="icon fa-solid fa-envelope"></i>
+      
+    </a>
+  </div>
+
+
+    
+      
+      
+      
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://carrend.github.io/" data-tooltip="Website" data-style="bare" aria-label="Website">
+      <i class="icon fa-solid fa-globe"></i>
+      
+    </a>
+  </div>
+
+
+    
+      
+      
+      
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://scholar.google.com/citations?user=iHh7IJQAAAAJ&hl=zh-CN" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
+      <i class="icon fa-brands fa-google"></i>
+      
+    </a>
+  </div>
+
+
+    
+      
+      
+      
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://orcid.org/0000-0002-3416-9950" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
+      <i class="icon fa-brands fa-orcid"></i>
       
     </a>
   </div>
@@ -698,7 +754,7 @@
 
   <div>
     © 2024
-    fengyueguoDESCRIPTION=An engaging 1-3 sentence description of your lab.
+    Med-AIR Lab
       |   Built with
     <a href="https://github.com/greenelab/lab-website-template">
       Lab Website Template
