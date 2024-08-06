@@ -1,19 +1,20 @@
 # site properties and page defaults
-title: fengyueguoDESCRIPTION=An engaging 1-3 sentence description of your lab.
-subtitle: 
-description: 
-header: images/background.jpg
-footer: images/background.jpg
-proofer: false
+title: Med-AIR Lab
+subtitle: Department of Computer Science and Engineering @ CUHK
+description: Medical Image Analysis, Machine Learning, Surgical Data Science, Robotics.
+header: images/cuhk_background.jpg
+footer: images/CUHK_edge.png
+header-dark: true
+footer-dark: true
 
 # site social media and other links
 links:
-  email: contact@fengyueguoDESCRIPTION=An engaging 1-3 sentence description of your lab..com
-  orcid: 0000-0001-8713-9213
-  google-scholar: ETJoidYAAAAJ
-  github: fengyueguoDESCRIPTION=An engaging 1-3 sentence description of your lab.
-  twitter: fengyueguoDESCRIPTION=An engaging 1-3 sentence description of your lab.
-  youtube: fengyueguoDESCRIPTION=An engaging 1-3 sentence description of your lab.
+  github: med-air
+  twitter: QiDou_
+  email: qidou@cuhk.edu.hk
+  website: https://carrend.github.io/
+  google-scholar: iHh7IJQAAAAJ&hl=zh-CN
+  orcid: 0000-0002-3416-9950
 
 ### jekyll settings
 
@@ -24,24 +25,6 @@ defaults:
       path: ""
     values:
       layout: default
-  # markdown files in /_members
-  - scope:
-      type: "members"
-    values:
-      layout: member
-  # markdown files in /_posts
-  - scope:
-      type: "posts"
-    values:
-      layout: post
-
-collections:
-  # generate page for each member
-  members:
-    output: true
-  # generate page for each post
-  posts:
-    output: true
 
 # jekyll plugins
 plugins:
