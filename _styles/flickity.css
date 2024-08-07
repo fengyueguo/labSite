@@ -643,15 +643,6 @@
     
       
         <a
-          href="/labSite/team/"
-          data-tooltip="About our team"
-        >
-          Team
-        </a>
-      
-    
-      
-        <a
           href="/labSite/research/"
           data-tooltip="Research directions"
         >
@@ -661,10 +652,19 @@
     
       
         <a
-          href="/labSite/publication/"
-          data-tooltip="Published works"
+          href="/labSite/team/"
+          data-tooltip="About our team"
         >
-          Publication
+          Team
+        </a>
+      
+    
+      
+        <a
+          href="/labSite/blog/"
+          data-tooltip="Musings and miscellany"
+        >
+          Blog
         </a>
       
     
@@ -679,10 +679,10 @@
     
       
         <a
-          href="/labSite/blog/"
-          data-tooltip="Musings and miscellany"
+          href="/labSite/publication/"
+          data-tooltip="Published works"
         >
-          Blog
+          Publication
         </a>
       
     
